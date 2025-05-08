@@ -57,12 +57,12 @@ my-notebook-app/
    npm run dev
 
    
-🔐 Authentication Flow
+## 🔐 Authentication Flow
 JWT is used to manage secure login and session tokens.
 
 Protected routes ensure that users only access their own data.
 
-📌 Future Improvements
+## 📌 Future Improvements
 Add search and filtering for notes
 
 Enable note sharing or collaboration
@@ -71,8 +71,8 @@ Markdown support in the note editor
 
 Dark/light theme toggle
 
-🤝 Contributing
+## 🤝 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-📄 License
+## 📄 License
 This project is open-source and available under the MIT License.
