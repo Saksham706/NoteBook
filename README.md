@@ -44,16 +44,13 @@ my-notebook-app/
    git clone https://github.com/your-username/my-notebook-app.git
    cd my-notebook-app
 
-2. ** Start the backend
+2. **Start the backend
+   ```bash
+   cd backend
+   npm install
+   npm run server
 
-bash
-Copy
-Edit
-cd backend
-npm install
-npm run server
-
-3. ** Start the frontend
+3. **Start the frontend
    ```bash
    cd frontend
    npm install
