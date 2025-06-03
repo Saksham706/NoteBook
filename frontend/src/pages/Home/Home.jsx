@@ -29,12 +29,12 @@ const Home = () => {
         },
       };
 
-      const folderRes = await axios.get('http://localhost:4000/api/folders/fetch', config);
+      const folderRes = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/folders/fetch`, config);
       setFolders(folderRes.data);
 
       const notesMap = {};
       for (const folder of folderRes.data) {
-        const notesRes = await axios.get(`http://localhost:4000/api/notes/folder/${folder._id}`, config);
+        const notesRes = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/notes/folder/${folder._id}`, config);
         notesMap[folder._id] = notesRes.data;
       }
       setNotes(notesMap);
