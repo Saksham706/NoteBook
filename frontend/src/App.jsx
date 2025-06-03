@@ -7,7 +7,7 @@ import axios from 'axios';
 import About from './pages/About/About';
 import Auth from './components/Auth/Auth';
 
-axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 
 const PrivateRoute = ({ element }) => {
   const token = localStorage.getItem("token");

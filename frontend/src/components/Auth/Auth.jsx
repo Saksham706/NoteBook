@@ -12,7 +12,8 @@ const Auth = () => {
     password: ""
   });
 
-  const BACKEND_URL = "http://localhost:4000";
+  const BACKEND_URL = import.meta.env.VITE_API_BASE_URL;
+
 
   const onChangeHandler = (e) => {
     const { name, value } = e.target;
@@ -34,7 +35,7 @@ const Auth = () => {
       }
     } catch (error) {
       console.error("Auth error:", error);
-      alert(error.response?.data?.message || "Network error.");
+      alert(error.response?.data?.message || "Incorrect Username or Password");
     }
   };
 

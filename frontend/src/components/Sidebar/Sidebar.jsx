@@ -4,7 +4,7 @@ import './Sidebar.css';
 
 const Sidebar = ({ folders, notes, onNoteSelect, fetchFoldersAndNotes }) => {
   const token = localStorage.getItem("token");
-  const BACKEND_URL = "http://localhost:4000";
+  const BACKEND_URL = import.meta.env.VITE_API_BASE_URL;
 
   const api = axios.create({
     baseURL: BACKEND_URL,
@@ -37,7 +37,7 @@ const Sidebar = ({ folders, notes, onNoteSelect, fetchFoldersAndNotes }) => {
         console.log('Sending request to delete folder...');
         const response = await api.delete(`/api/folders/delete/${id}`);
         console.log('Folder deleted:', response.data);
-        fetchFoldersAndNotes(); // Refresh folders and notes
+        fetchFoldersAndNotes(); 
       } catch (error) {
         console.error('Error deleting folder:', error);
         alert('Could not delete folder.');
@@ -53,7 +53,7 @@ const Sidebar = ({ folders, notes, onNoteSelect, fetchFoldersAndNotes }) => {
         console.log('Sending request to add note...');
         const response = await api.post('/api/notes/create', { folderId, name });
         console.log('Note added:', response.data);
-        fetchFoldersAndNotes(); // Refresh folders and notes
+        fetchFoldersAndNotes(); 
       } catch (error) {
         console.error('Error adding note:', error);
         alert('Could not add note.');
@@ -68,7 +68,7 @@ const Sidebar = ({ folders, notes, onNoteSelect, fetchFoldersAndNotes }) => {
         console.log('Sending request to delete note...');
         const response = await api.delete(`/api/notes/${noteId}`);
         console.log('Note deleted:', response.data);
-        fetchFoldersAndNotes(); // Refresh folders and notes
+        fetchFoldersAndNotes();
       } catch (error) {
         console.error('Error deleting note:', error);
         alert('Could not delete note.');
