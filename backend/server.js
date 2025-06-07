@@ -12,6 +12,8 @@ app.get('/', (req, res) => {
   res.send('API is running...');
 });
 
+app.options("*", cors());
+
 app.use(cors({
     origin: [process.env.FRONTEND_URL,"https://note-book-zcz9.vercel.app/"],
      credentials: true,
