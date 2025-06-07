@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL
+    origin: [process.env.FRONTEND_URL,"https://note-book-is7x.vercel.app/"]
 }));
 app.use(express.json());
 

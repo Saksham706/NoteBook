@@ -3,9 +3,9 @@ node_modules/
 .env
 
 # Ignore frontend build and dependencies
-client/node_modules/
-client/build/
-client/.env
+frontend/node_modules/
+frontend/dist/
+frontend/.env
 
 # Logs
 *.log
