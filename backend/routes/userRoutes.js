@@ -4,6 +4,11 @@ const { body } = require("express-validator");
 const fetchuser = require("../middleware/fetchuser");
 const userController = require("../controllers/userController");
 
+
+router.get("/", (req, res) => {
+  res.send("Auth route is working");
+});
+
 // Route 1: Create user
 router.post(
   "/createuser",
