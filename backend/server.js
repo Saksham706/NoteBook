@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 app.options("*", cors());
 
 app.use(cors({
-    origin: [process.env.FRONTEND_URL,"https://note-book-zcz9.vercel.app/"],
+    origin: [process.env.FRONTEND_URL],
      credentials: true,
 }));
 app.use(express.json());
