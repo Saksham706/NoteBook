@@ -14,7 +14,6 @@ const Auth = () => {
 
   const BACKEND_URL = import.meta.env.VITE_API_BASE_URL;
 
-
   const onChangeHandler = (e) => {
     const { name, value } = e.target;
     setData((prev) => ({ ...prev, [name]: value }));
@@ -25,17 +24,23 @@ const Auth = () => {
     const endpoint = currState === "Login" ? "/api/auth/login" : "/api/auth/createuser";
 
     try {
+      console.log("Sending request to:", `${BACKEND_URL}${endpoint}`, data);
       const response = await axios.post(`${BACKEND_URL}${endpoint}`, data);
+
       if (response.data.success) {
         localStorage.setItem("token", response.data.authToken);
         console.log("Token saved:", response.data.authToken);
         navigate("/home");
       } else {
-        alert(response.data.message || "Something went wrong.");
+        alert(response.data.message || "Something went wrong");
       }
     } catch (error) {
-      console.error("Auth error:", error);
-      alert(error.response?.data?.message || "Incorrect Username or Password");
+      const errorMsg =
+        error.response?.data?.message ||
+        error.response?.data?.error ||  
+        "Something went wrong";
+
+      alert(errorMsg);;
     }
   };
 
