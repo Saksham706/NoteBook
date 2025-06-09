@@ -65,6 +65,7 @@ cd NoteBook
   ├── frontend/        # React + Vite frontend
   └── README.md
 
+---
 
 ## 💡 Usage
   🔑 Register or log in securely
@@ -73,14 +74,21 @@ cd NoteBook
   💾 Notes autosave automatically
   🔒 Logout to keep your data safe 
 
+---
+
 ## 🤝 Contributing
   Contributions welcome! Feel free to open issues or PRs to improve the project. 🌟
+
+---
 
 ## 📄 License
   This project is licensed under the MIT License. See LICENSE for details.
 
+---
+
 ## 📬 Contact
   Questions or feedback? Reach out at sakshamagarwal004@gmail.com ✉️
+
 
    
 
