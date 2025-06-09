@@ -1,4 +1,3 @@
-![Screenshot (185)](https://github.com/user-attachments/assets/f5b8aa8c-2d50-4719-b769-f8633c874275)
 # 📓 NoteBook
 
 Welcome to **NoteBook** — a secure, full-stack note-taking app built with React, Vite, Node.js, and Express.js! ✨ Organize your thoughts by creating folders and notes, with autosave and strong authentication to keep your data safe 🔐.
@@ -24,6 +23,7 @@ Welcome to **NoteBook** — a secure, full-stack note-taking app built with Reac
 - **Authentication:** *(JWT or other)* 🔑
 
 ---
+![Screenshot (185)](https://github.com/user-attachments/assets/f13459d7-17b1-4fbd-ad50-f15765393165)
 
 ## 🏁 Getting Started
 
