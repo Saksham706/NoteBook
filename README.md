@@ -29,7 +29,6 @@ Welcome to **NoteBook** — a secure, full-stack note-taking app built with Reac
 ![Screenshot (185)](https://github.com/user-attachments/assets/f13459d7-17b1-4fbd-ad50-f15765393165)
 ![Screenshot (186)](https://github.com/user-attachments/assets/aab2188f-0882-4c99-9507-adf54aeb5352)
 ![Screenshot (187)](https://github.com/user-attachments/assets/a504080e-95be-4e0e-aa80-d49b0f6e716c)
-![Screenshot (188)](https://github.com/user-attachments/assets/d264d849-4ce2-49fa-8409-17d36895dc09)
 ![1](https://github.com/user-attachments/assets/e297a9ef-e705-4d4e-8340-430af237a952)
 ![2](https://github.com/user-attachments/assets/884e92fe-d5e7-43dd-82ee-48b1cffa30f8)
 ![Screenshot (188)](https://github.com/user-attachments/assets/1ec29939-025d-4722-a730-96d3fa21ce89)
