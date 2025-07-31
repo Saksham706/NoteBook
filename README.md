@@ -24,6 +24,12 @@ Welcome to **NoteBook** — a secure, full-stack note-taking app built with Reac
 
 ---
 
+## 🚀 Live Link
+
+🌐 [notebook-frontend-one.vercel.app](https://notebook-frontend-one.vercel.app)
+This is the live deployed version of the Notebook app frontend hosted on Vercel.
+
+
 ## 🖼️ Photos 
 
 ![Screenshot (185)](https://github.com/user-attachments/assets/f13459d7-17b1-4fbd-ad50-f15765393165)
