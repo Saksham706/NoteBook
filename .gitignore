@@ -1,6 +1,5 @@
 # Root-level
 node_modules/
-.env
 .DS_Store
 
 # Logs
@@ -24,7 +23,6 @@ pids
 *.pid.lock
 
 # IDEs and editors
-.vscode/
 .idea/
 *.suo
 *.ntvs*
@@ -38,7 +36,7 @@ Icon?
 Desktop.ini
 
 # Misc
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
+config.bat
